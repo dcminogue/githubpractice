@@ -19,6 +19,24 @@ app.get("/hello/:name", (req, res) =>
 `)
 );
 
+app.use((_, res) => res.status(404).end(`
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>404: Page Not Found</title>
+    </head>
+    <body>
+        <h1>404: Page Not Found</h1>
+        <p>
+            Please try again or visit the home page,
+            <a href="/">
+                here.
+            </a>
+        </p>
+    </body>
+</html>
+`));
+
 app.listen(port, err => {
     console.log(err || `listening on port ${port} 😎`);
 });
