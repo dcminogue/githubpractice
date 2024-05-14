@@ -19,6 +19,7 @@ app.get("/hello/:name", (req, res) =>
 `)
 );
 
+
 app.use((_, res) => res.status(404).end(`
 <!DOCTYPE html>
 <html>
@@ -36,6 +37,13 @@ app.use((_, res) => res.status(404).end(`
     </body>
 </html>
 `));
+
+app.get("/about", (req, res) => {
+    res.send(
+        "Our goal in this project is to develop a basic Express application."
+    );
+});
+
 
 app.listen(port, err => {
     console.log(err || `listening on port ${port} 😎`);
