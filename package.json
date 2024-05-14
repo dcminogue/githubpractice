@@ -1,0 +1,23 @@
+{
+  "name": "githubpractice",
+  "version": "1.0.0",
+  "description": "Simple express project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcminogue/githubpractice.git"
+  },
+  "author": "Dan Minogue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcminogue/githubpractice/issues"
+  },
+  "homepage": "https://github.com/dcminogue/githubpractice#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
